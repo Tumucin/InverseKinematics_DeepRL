@@ -1,0 +1,34 @@
+expNumber: "61"
+expVersionNumber: "v2"
+envName: "PandaReach-v2"   
+total_timesteps: 120000
+mode: False  
+continueTraining: False                   
+algorithm: "TQC"                    
+policy: "MultiInputPolicy"   
+ent_coef: 'auto'        
+render: True
+gamma: 0.95
+learning_rate: 0.001
+learning_starts: 1000
+normalize: True   
+batch_size: 128       
+#batch_size: 2048
+buffer_size: 1000000
+replay_buffer_kwargs : {'online_sampling' : True,
+             'goal_selection_strategy' : 'future',
+             'n_sampled_goal' : 4}
+
+policy_kwargs : {'net_arch' : [128, 128], 
+                 'n_critics' : 1}
+
+# 6: 40
+# 7: 50
+# 8: default
+# 9: 35, 0.005
+# 10: 10
+# 11: 80
+# 12: 40, 0.001
+# 13: 45, 0.001
+# 14: 50, 0.001
+# 15: 100, 0.001

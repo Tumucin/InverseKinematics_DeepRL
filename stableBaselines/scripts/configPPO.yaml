@@ -1,0 +1,13 @@
+expNumber: "1"
+envName: "PandaReach-v2"             
+total_timesteps: !!float 250000
+mode: True                           
+algorithm: "PPO"                    
+policy: "MultiInputPolicy"           
+render: False                        
+gamma: 0.99 
+n_steps: 512
+batch_size: 256
+learning_rate: 0.0003
+n_envs: 1 
+                  
